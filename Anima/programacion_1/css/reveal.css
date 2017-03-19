@@ -1335,4 +1335,5 @@ html:-moz-full-screen-ancestor {
   background: none; }
 
 .zoomed .reveal .roll span:after {
-  visibility: hidden; }
+  visibility: hidden;
+}
