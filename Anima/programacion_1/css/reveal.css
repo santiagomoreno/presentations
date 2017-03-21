@@ -122,7 +122,11 @@ html:-moz-full-screen-ancestor {
 .reveal .slides section .fragment.highlight-green,
 .reveal .slides section .fragment.highlight-current-green,
 .reveal .slides section .fragment.highlight-blue,
-.reveal .slides section .fragment.highlight-current-blue {
+.reveal .slides section .fragment.highlight-current-blue,
+.reveal .slides section .fragment.highlight-brown,
+.reveal .slides section .fragment.highlight-current-brown,
+.reveal .slides section .fragment.highlight-orange,
+.reveal .slides section .fragment.highlight-current-orange {
   opacity: 1;
   visibility: visible; }
 
@@ -135,6 +139,13 @@ html:-moz-full-screen-ancestor {
 .reveal .slides section .fragment.highlight-blue.visible {
   color: #1b91ff; }
 
+.reveal .slides section .fragment.highlight-brown.visible {
+  color: #662200; }
+
+.reveal .slides section .fragment.highlight-orange.visible {
+  color: #ffa64d; }
+
+
 .reveal .slides section .fragment.highlight-current-red.current-fragment {
   color: #ff2c2d; }
 
@@ -144,6 +155,11 @@ html:-moz-full-screen-ancestor {
 .reveal .slides section .fragment.highlight-current-blue.current-fragment {
   color: #1b91ff; }
 
+.reveal .slides section .fragment.highlight-current-brown.current-fragment {
+  color: #662200; }
+
+.reveal .slides section .fragment.highlight-current-orange.current-fragment {
+  color: #ffa64d; }
 /*********************************************
  * DEFAULT ELEMENT STYLES
  *********************************************/
