@@ -823,6 +823,179 @@ List < String> lista = new ArrayList< String>();
                        </ul>
                    </section>
 
+                   <section>
+                       <pre style="width: 100%; margin: 0px; box-shadow: none;"> <code class="java" style="max-height: none; margin: 0px;" data-trim >
+   package main.java.ejercicios.ejercicio1;
+
+   public class Ejercicio1 {
+
+   	public static void main(String[] args) {
+           //Declaramos las variables
+           int num1 = 11;
+           int num2 = 5;
+
+           // Imprimimos en consola
+
+           System.out.println("El resultado de la suma es " + (num1+num2));
+
+           System.out.println("El resultado de la resta es " + (num1-num2));
+
+           System.out.println("El resultado de la multiplicación es " + (num1*num2));
+
+           System.out.println("El resultado de la división es " + (num1/num2));
+
+           System.out.println("El modulo es " + (num1%num2));
+
+   	}
+
+   }
+                   </code></pre>
+                   </section>
+
+                   <section>
+                       <pre style="width: 100%; margin: 0px; box-shadow: none;"> <code class="java" style="max-height: none; margin: 0px;" data-trim >
+   package main.java.ejercicios.ejercicio1;
+
+   public class Ejercicio2 {
+
+   	public static void main(String[] args) {
+
+           int num1 = 30;
+           int num2 = 15;
+
+           if (num1 == num2){
+                   System.out.println("Los numeros " + num1 + " y " + num2 + " son iguales");
+           } else {
+           	if (num1>num2) {
+                   System.out.println("El número " + num1 + " es mayor que el número " + num2);
+               } else {
+               	System.out.println("El número " + num2 + " es mayor que el número " + num1);
+               }
+           }
+       }
+   }
+                   </code></pre>
+                   </section>
+
+                   <section>
+                       <pre style="width: 100%; margin: 0px; box-shadow: none;"> <code class="java" style="max-height: none; margin: 0px;" data-trim >
+    package main.java.ejercicios.ejercicio1;
+
+    import java.util.Scanner;
+
+    public class Ejercicio3 {
+
+    	public static void main(String[] args) {
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Introduce tu nombre");
+
+            // Espera a que se escriba algo
+            String nombre = sc.nextLine();
+
+            System.out.println("Hola "+nombre);
+        }
+    }
+                   </code></pre>
+                   </section>
+
+                   <section>
+                       <pre style="width: 100%; margin: 0px; box-shadow: none;"> <code class="java" style="max-height: none; margin: 0px;" data-trim >
+    package main.java.ejercicios.ejercicio1;
+
+    import javax.swing.JOptionPane;
+
+    public class Ejercicio4 {
+   	    public static void main(String[] args) {
+
+   		       //Nos aparece un cuadro de dialogo
+   		       String nombre = JOptionPane.showInputDialog("Introduce tu nombre");
+
+               System.out.println("Hola " + nombre);
+   	   }
+   }
+                   </code></pre>
+                   </section>
+
+                   <section>
+                       <pre style="width: 100%; margin: 0px; box-shadow: none;"> <code class="java" style="max-height: none; margin: 0px;" data-trim >
+   package main.java.ejercicios.ejercicio1;
+
+   import java.util.Scanner;
+
+   public class Ejercicio5 {
+       public static void main(String[] args) {
+
+           Scanner sc = new Scanner(System.in);
+           System.out.println("Introduce un radio");
+           double radio = sc.nextDouble();
+
+           //Formula area circulo, usamos algunos de los metodos de Math
+           double area = Math.PI*Math.pow(radio, 2);
+           // Math.PI retorna el valor de pi.
+           // Math.pow(x,y) retorna x elevado a la y
+
+           System.out.println("El area del circulo es " + area);
+       }
+   }
+
+                   </code></pre>
+                   </section>
+
+                   <section>
+                       <pre style="width: 100%; margin: 0px; box-shadow: none;"> <code class="java" style="max-height: none; margin: 0px;" data-trim >
+   package main.java.ejercicios.ejercicio1;
+
+   import javax.swing.JOptionPane;
+
+   public class Ejercicio6 {
+
+       public static void main(String[] args) {
+
+           String texto = JOptionPane.showInputDialog("Introduce un radio");
+           //Pasamos el String a double
+           double radio = Double.parseDouble(texto);
+
+           //Formula area circulo, usamos algunos de los metodos de Math
+           double area = Math.PI*Math.pow(radio, 2);
+
+           System.out.println("El area del circulo es " + area);
+       }
+   }
+
+                   </code></pre>
+                   </section>
+
+                   <section>
+                       <pre style="width: 100%; margin: 0px; box-shadow: none;"> <code class="java" style="max-height: none; margin: 0px;" data-trim >
+   package main.java.ejercicios.ejercicio1;
+
+   import javax.swing.JOptionPane;
+
+   public class Ejercicio7 {
+
+       public static void main(String[] args) {
+
+           //Declaramos una constante
+           final double IVA = 0.21;
+
+           String texto=JOptionPane.showInputDialog("Introduce el precio de un producto");
+
+           //Pasamos el String a double
+           double precio = Double.parseDouble(texto);
+
+           //Obtenemos el precio final (precio+(precio*IVA))
+           double precioFinal = precio + (precio*IVA);
+
+           System.out.println(precioFinal);
+       }
+
+   }
+
+                   </code></pre>
+                   </section>
+
                </section>
 			</div>
 
