@@ -1070,6 +1070,106 @@ while (redesSociales.hasNext()) {
                         </code></pre>
                     </section>
 
+                    <section>
+                        <img data-src="img/logot.png" style="background: none; border: none; box-shadow: none; position: absolute; top: 0; right: 0; height: 100px;">
+                        <h3>Clases - Constructor</h3>
+                        <ul>
+                            <li>Se ejecutan al crear la clase</li>
+                            <li>Se llaman igual que la clase</li>
+                            <li>No tienen tipo de retorno</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <img data-src="img/logot.png" style="background: none; border: none; box-shadow: none; position: absolute; top: 0; right: 0; height: 100px;">
+                        <p>Clases - Constructor</p>
+                        <pre style="width: 100%; margin: 0px; box-shadow: none;"> <code class="java" style="max-height: none; margin: 0px;" data-trim >
+public class Persona {
+
+   private String nombre;
+   private int edad;
+
+   public Persona() {
+       edad = 18;
+   }
+
+   public Persona(String nombre, int edad) {
+      edad = 18;
+   }
+
+}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <img data-src="img/logot.png" style="background: none; border: none; box-shadow: none; position: absolute; top: 0; right: 0; height: 100px;">
+                        <p>Clases - this</p>
+                        <ul>
+                            <li>Es una palabra reservada</li>
+                            <li>Se utiliza en los metodos o contructores</li>
+                            <li>Es una referencia al objeto actual</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <img data-src="img/logot.png" style="background: none; border: none; box-shadow: none; position: absolute; top: 0; right: 0; height: 100px;">
+                        <p>Clases - Constructor - this</p>
+                        <pre style="width: 100%; margin: 0px; box-shadow: none;"> <code class="java" style="max-height: none; margin: 0px;" data-trim >
+public class Persona {
+
+   private String nombre;
+   private int edad;
+
+   public Persona(String nombre, int edad) {
+       this.nombre = nombre;
+       this.edad = edad;
+   }
+
+}
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <img data-src="img/logot.png" style="background: none; border: none; box-shadow: none; position: absolute; top: 0; right: 0; height: 100px;">
+                        <h3>Clases - Getters & Setters</h3>
+
+                        <p>Son metodos de acceso, por lo que siempre deben ser declarados publicos</p>
+
+                    </section>
+
+                    <section>
+                        <img data-src="img/logot.png" style="background: none; border: none; box-shadow: none; position: absolute; top: 0; right: 0; height: 100px;">
+                        <p>Clases - Setters</p>
+
+                        <ul>
+                            <li>Del Inglés "Set", que significa establecer</li>
+                            <li>Sirve para asignar un valor a un atributo</li>
+                            <li>No retorna nada, por lo cual siempre debe ser void</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <img data-src="img/logot.png" style="background: none; border: none; box-shadow: none; position: absolute; top: 0; right: 0; height: 100px;">
+                        <p>Clases - Getter</p>
+
+                        <ul>
+                            <li>Del Inglés "Get", que significa obtener</li>
+                            <li>Sirve para obtener (recuperar o acceder) el valor ya asignado a un atributo</li>
+                            <li>El valor de retorno depende del tipo del atributo</li>
+                            <li>No utiliza parametros</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <img data-src="img/logot.png" style="background: none; border: none; box-shadow: none; position: absolute; top: 0; right: 0; height: 100px;">
+                        <p>Clases - toString()</p>
+
+                        <ul>
+                            <li>Se utiliza para mostrar la informacion relevante del objeto</li>
+                            <li>Siempre retorna un String</li>
+                        </ul>
+                    </section>
+
 
               </section> <!-- End of Section 6 -->
 			</div>
