@@ -2,15 +2,20 @@
 
 _**Realizar el pseudocodigo correspondiente a cada uno de los siguientes enunciados**_
 
-1. Hacer un algoritmo que lea dos números y diga cuál es el mayor. <details><summary>lala</summary>
+1. Hacer un algoritmo que lea dos números y diga cuál es el mayor. 
+<details><summary>Ejemplo</summary>
 <p>
+  
+#### Solucion
 
-#### yes, even hidden code blocks!
-
-```python
-print("hello world!")
+``` 
+Leer X
+Leer Y
+Si X > Y Entonces
+   Mostrar X
+Sino
+   Mostrar Y
 ```
-
 </p>
 </details>
 
