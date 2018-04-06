@@ -14,6 +14,7 @@ print("hello world!")
 
 </p>
 </details>
+
 2. Hacer un algoritmo que imprima los número del 1 al 100.
 
 3. Hacer un algoritmo que imprima los número del 100 al 1.
