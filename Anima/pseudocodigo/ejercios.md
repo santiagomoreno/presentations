@@ -2,8 +2,8 @@
 
 _**Realizar el pseudocodigo correspondiente a cada uno de los siguientes enunciados**_
 
-1. <details><summary>Hacer un algoritmo que lea dos números y diga cuál es el mayor.</summary>
-
+1. Hacer un algoritmo que lea dos números y diga cuál es el mayor.
+<details><summary>lala</summary>
 <p>
 
 #### yes, even hidden code blocks!
