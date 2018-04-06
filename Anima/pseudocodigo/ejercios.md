@@ -2,8 +2,18 @@
 
 _**Realizar el pseudocodigo correspondiente a cada uno de los siguientes enunciados**_
 
-1. Hacer un algoritmo que lea dos números y diga cuál es el mayor.
+1. <details><summary>Hacer un algoritmo que lea dos números y diga cuál es el mayor.</summary>
 
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
 2. Hacer un algoritmo que imprima los número del 1 al 100.
 
 3. Hacer un algoritmo que imprima los número del 100 al 1.
