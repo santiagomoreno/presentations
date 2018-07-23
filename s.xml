@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+
+        <!-- a brief human-readable title that identifies the search engine -->
+    <ShortName>stest</ShortName>
+
+        <!-- a brief human-readable title that identifies the search engine -->
+    <LongName>santi test LongName</LongName>
+
+        <!-- description of the search engine -->
+    <Description>Santi test description</Description>
+
+        <!-- an URL where the search requests can be handled -->
+    <Url type="text/html" method="get" template="https://api.mercadolibre.com/items/" />
+
+        <!-- the image that is associated with the search engine -->
+    <Image height="16" width="16" type="image/x-icon">http://www.dottoro.com/favicon.ico</Image>
+</OpenSearchDescription>
