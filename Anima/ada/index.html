@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<title>reveal.js</title>
+		<title>Análisis y diseño de Aplicaciones</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -24,8 +24,146 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+          <img data-src="img/logo_white.png" width="25%" height="25%" style="margin: none; background: none; border: none; box-shadow: none;">
+          <h2>Análisis y diseño de Aplicaciones</h2>
+          <p>
+            <small>Santiago Moreno</small>
+          </p>
+        </section>
+
+				<section>
+          <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+          <h2>Indice</h2>
+          <ol>
+            <a href="#/2">1 - Introducción a la ingeniería de software</a>
+          </ol>
+        </section>
+
+        <!--
+        TEMA 1: Introducción - inicio
+        -->
+        <section>
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Introducción a la ingeniería de software</h2>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>El proceso del software</h2>
+            <ul>
+              <li>Para el desarrollo de un producto de software se necesita un conjunto estructurado de actividades</li>
+              <li>Existen varios modelos de procesos. <br>Todos incluyen:
+                <ol>
+                  <li><span style="color: #2b69a9">Especificación</span></li>
+                  <li><span style="color: #2b69a9">Diseño</span></li>
+                  <li><span style="color: #2b69a9">Implementación</span></li>
+                  <li><span style="color: #2b69a9">Validación</span></li>
+                  <li><span style="color: #2b69a9">Evolución</span></li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Clasificaciones</h2>
+            <ul>
+              <li>Procesos dirigidos por planes</li>
+              <li>Procesos ágiles</li>
+            </ul>
+            <p>En la practica los procesos incluyen elementos de ambos enfoques</p>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Modelo en cascada</h2>
+          </section>
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Modelo en cascada - Problemas</h2>
+            <p>Los problemas son:</p>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Modelo Incremental</h2>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Modelo Incremental - Beneficios</h2>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Modelo Incremental - Problemas</h2>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Especificación</h2>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Diseño</h2>
+            <p style="font-size: xx-large">Diseña la estructura del sotware que satisface la especificación</p>
+            <ul>
+              <li style="font-size: xx-large">
+                <span style="color: #2b69a9">Diseño de Arquitectura:</span> identificar todas las estructuras del sustema, los principales componentes, sus relaciones y como estan distribuidos.
+              </li>
+              <li style="font-size: xx-large">
+                <span style="color: #2b69a9">Diseño de la base de datos:</span> diseñar las estructuda del sistema de datos y como van a ser representados en la base
+              </li>
+              <li style="font-size: xx-large">
+                <span style="color: #2b69a9">Diseño de la intefaz de usuario:</span> se definen las interfaces ente los componentes del sistema
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Implementación</h2>
+            <p>El programa es desarrollado mediante la implementación.</p>
+            <p>Puede ser un programa único o varios programas.</p>
+            <p>El diseño y la implementación son actividades por lo general intercaladas</p>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Validación</h2>
+            <p>La validación y verificación pretende mostrar que el sistema se ajusta a su especificación y cumple con los requisitos del cliente</p>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Validación - Etapas</h2>
+            <ul>
+              <li>Pruebas Unitarias</li>
+              <li>Pruebas de sistema o integración</li>
+              <li>Pruebas de aceptación</li>
+            </ul>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Ingeniería de software</h2>
+            <p>Es una disciplina de la ingeniería que se ocupa de todos los aspectos de la producción de software desde las primeras etapas de la especificación del sistema hasta el mantenimiento del sistema una vez que se ha puesto en uso.</p>
+          </section>
+        </section>
+
+        <!--
+        TEMA 1: Introducción - Fin
+        -->
+
+        <!--
+        TEMA 2: Análisis de Sistemas de información - Inicio
+        -->
+        <!--
+        TEMA 2: Análisis de Sistemas de información - Fin
+        -->
 			</div>
 		</div>
 
