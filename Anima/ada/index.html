@@ -231,6 +231,7 @@
           </section>
 
           <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
             <h2>no funcionales</h2>
             <p style="color: #2b69a9">Del producto</p>
             <p>Especifican restricciones al comportamiento del producto</p>
@@ -242,6 +243,7 @@
           </section>
 
           <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
             <h2>no funcionales</h2>
             <p style="color: #2b69a9">Externos</p>
             <p style="font-size: xx-large">Se derivan de factores externos, como:</p>
@@ -253,10 +255,175 @@
           </section>
 
         </section>
-
         <!--
         TEMA 2: Requerimientos - Fin
         -->
+
+        <!--
+        TEMA 3: Análisis - Inicio
+        -->
+        <section>
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Análisis</h2>
+          </section>
+          <section data-markdown>
+            ## Casos de Uso
+
+            * El enfoque de casos de uso está basado en la noción de actor
+            * Un actor es un agente externo (humano o no) que interactúa directamente con el sistema
+            * Un caso de uso narra la historia completa (junto a todas sus variantes) de un conjunto de actores mientras usan el sistema
+
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Casos de Uso</h2>
+
+            <p style="font-size: xx-large">Un caso de uso se compone de:</p>
+            <ul style="font-size: xx-large">
+              <li><span style="color: #2b69a9">Nombre</span> que identifica al caso de uso</li>
+              <li><span style="color: #2b69a9">Sinopsis</span> que describe brevemente su objetivo</li>
+              <li><span style="color: #2b69a9">Curso típico de eventos</span> que narra la “historia” más común de los actores durante el uso del sistema</li>
+              <li><span style="color: #2b69a9">Cursos alternativos de eventos</span> que narran las variantes de uso del sistema</li>
+            </ul>
+          </section>
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Casos de Uso</h2>
+            <table style="font-size: x-large">
+                <tr>
+                  <td>Nombre</td>
+                  <td>Escribir Email</td>
+                </tr>
+                <tr>
+                  <td>Actor</td>
+                  <td>Usuario</td>
+                </tr>
+                <tr>
+                  <td>Descripción</td>
+                  <td>El caso de uso comienza cuando el Usuario desea escribir un correo electrónico. Para ello especifica el cuerpo del correo electrónico y un asunto. Luego si lo desea el usuario puede adjuntar uno o más archivos de su disco duro en el email. Al finalizar de escribir el email el sistema especifica una lista de contactos y el usuario selecciona opcionalmente uno o más destinatarios. Para cada destinatario puede especificar que tipo de destinatario se trata (Principal, Con Copia o Con Copia oculta). Luego el usuario puede elegir más destinatarios escribiendo manualmente sus correos electrónicos y el tipo de destinatario al igual que lo hizo antes. Al finalizar el sistema envía el correo y lo copia en la carpeta ‘Enviados’</td>
+                </tr>
+            </table>
+          </section>
+          <section data-markdown style="font-size: x-large">
+            ### Casos de Uso - Exp
+
+            **Caso de Uso:** Escribir Email
+
+            **Actores:** Cliente
+
+            **Sinopsis:** El caso de uso comienza cuando el Usuario desea escribir un correo electrónico.
+
+            **Escenario Típico:**
+
+            1. Usuario especifica Cuerpo del correo y el asunto
+            2. El Sistema muestra una lista de contactos
+            3. El Usuario selecciona contactos y especifica para cada uno el tipo de destinatario
+            4. El Usuario especifica más destinatarios escribiendo sus nombres y el tipo de destinatario
+            5. El Usuario hace click en un botón Enviar
+            6. El Sistema envía el mail
+            7. El Sistema copia el mail a la carpeta Enviados
+
+          </section>
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Modelo de dominio</h2>
+          </section>
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Modelado de dominio</h2>
+            <ul style="font-size: xx-large">
+              <li>Consiste en encontrar y describir los conceptos en el dominio de la aplicación</li>
+              <li>Descompone el problema en conceptos individuales</li>
+              <li>Se construye el Modelo de Dominio</li>
+            </ul>
+          </section>
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Modelo de domino</h2>
+            <p style="font-size: xx-large">Contenido:</p>
+            <ul style="font-size: xx-large">
+              <li><span style="color: #2b69a9">Introducción</span> Breve descripción que sirve como introducción al modelo</li>
+              <li><span style="color: #2b69a9">Conceptos</span> Clases que representan conceptos significativos presentes en el dominio</li>
+              <li><span style="color: #2b69a9">Tipos</span> Data types que describen propiedades de las clases que representan conceptos</li>
+              <li><span style="color: #2b69a9">Relaciones</span> Relaciones de asociación o generalización entre las clases que representan conceptos</li>
+              <li><span style="color: #2b69a9">Diagramas</span> Representaciones (usualmente uno solo) de conceptos, tipos y relaciones presentes en el modelo</li>
+            </ul>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Modelo de domino</h2>
+            <p style="color: #2b69a9">Conceptos</p>
+            <p>Un concepto es una idea, cosa o elemento del problema que se está modelando</p>
+            <p>Es necesario identificar aquellos atributos que permitan satisfacer los requerimientos</p>
+          </section>
+
+          <section data-markdown style="font-size: x-large">
+            ### Modelo de domino
+            **Agregación**
+
+              Es una forma más fuerte de asociación
+              * Significa que un elemento es parte de otro
+              * Existen dos variantes
+                * Agregación compartida
+                * Agregación compuesta
+
+          </section>
+          <section data-markdown style="font-size: x-large">
+            ### Modelo de domino
+            **Agregación compartida**
+
+![Agregación compartida](img/agregation.png)
+          </section>
+
+          <section data-markdown style="font-size: x-large">
+            ### Modelo de domino
+            **Agregación compuesta**
+
+![Agregación compuesta](img/agregation_composed.png)
+          </section>
+
+          <section data-markdown style="font-size: x-large">
+            ### Modelo de domino
+            **Generalización**
+
+![Generalización](img/generalization.png)
+          </section>
+          <section data-markdown style="font-size: x-large">
+            ### Modelo de domino
+            **Associación**
+
+![Associación](img/association.png)
+          </section>
+
+          <section data-markdown style="font-size: x-large">
+            ### Modelo de domino
+            **Restricciones**
+
+            * **Unicidad de Atributos:** No hay dos productos con el mismo código
+            * **Dominio de Atributos:** En la empresa no puede haber vendedores menores de 18 años
+            * **Integridad Circular:** Un vendedor no puede vender productos de una empresa en la que no trabaja
+            * **Atributos Calculados:** El atributo cantEmp es la cantidad de empleados de la empresa
+            * **Reglas de Negocio:** “Ningún vendedor menor de 30 años puede vender el producto de código X
+          </section>
+          <section data-markdown style="font-size: x-large">
+            ### Modelo de domino
+            **Restricciones**
+
+![Restricciones](img/empresa.png)
+          </section>
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h1>Diagramas de Secuencia</h1>
+          </section>
+        </section>
+        <!--
+        TEMA 3: Análisis - Inicio
+        -->
+
+
 			</div>
 		</div>
 
