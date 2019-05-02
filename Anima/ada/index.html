@@ -129,7 +129,7 @@
             <p style="font-size: xx-large">Diseña la estructura del sotware que satisface la especificación</p>
             <ul>
               <li style="font-size: xx-large">
-                <span style="color: #2b69a9">Diseño de Arquitectura:</span> identificar todas las estructuras del sustema, los principales componentes, sus relaciones y como estan distribuidos.
+                <span style="color: #2b69a9">Diseño de Arquitectura:</span> identificar todas las estructuras del sistema, los principales componentes, sus relaciones y como estan distribuidos.
               </li>
               <li style="font-size: xx-large">
                 <span style="color: #2b69a9">Diseño de la base de datos:</span> diseñar las estructuda del sistema de datos y como van a ser representados en la base
@@ -421,9 +421,112 @@
           </section>
         </section>
         <!--
-        TEMA 3: Análisis - Inicio
+        TEMA 3: Análisis - Fin
         -->
 
+        <!--
+        TEMA 4: Diseño - Inicio
+        -->
+        <section>
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Diseño</h2>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Diseño de Arquitectura</h2>
+            <p>El objetivo es establecer la estructura global del sistema y cómo se debe organizar</p>
+            <p>Identificación de los principales componentes del sistema y sus relaciones</p>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Patrones de Arquitectura</h2>
+            <p>Un patrón es una descripción abstracta de buena práctica, que se ensayó y puso a prueba en diferentes sistemas y entornos.</p>
+            <p>Describe una organización de sistema que ha tenido éxito en sistemas previos.</p>
+            <p>Incluye información sobre cuándo es y cuándo no es adecuado usar dicho patrón, así como las fortalezas y debilidades del patrón.</p>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Beneficios de utilizar Patrones</h2>
+            <p>Permite seleccionar una solución entendible y probada a ciertos problemas, definiendo los principios organizativos del sistema.</p>
+            <p>Al basar la arquitectura en estilos que son conocidos se facilita comunicar las características importantes de la misma.</p>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Arquitectura en capas</h2>
+            <ul style="font-size: xx-large">
+              <li><span style="color: #2b69a9">Descripción</span> Organiza el sistema en capas con funcionalidad relacionada con cada capa. Una capa da servicios a la capa de encima.</li>
+              <li><span style="color: #2b69a9">Cuándo</span> Nuevas facilidades encima de sistemas existentes; desarrollo disperso en varios equipos, y cada uno es responsable de una capa de funcionalidad; requisito de seguridad multinivel.</li>
+              <li><span style="color: #2b69a9">Ventajas</span> Permite la sustitución de capas en tanto se conserve la interfaz. Aumentar la confiabilidad, en cada capa pueden incluirse facilidades redundantes (por ejemplo, autenticación).</li>
+              <li><span style="color: #2b69a9">Desventajas</span> Es difícil ofrecer una separación limpia entre capas, El rendimiento suele ser un problema.</li>
+            </ul>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Arquitectura en capas</h2>
+            <img src="img/diseno_capas.png" width="80%" height="80%">
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Arquitectura de repositorio</h2>
+            <ul style="font-size: xx-large">
+              <li><span style="color: #2b69a9">Descripción</span> Todos los datos en un sistema se gestionan en un repositorio central, accesible a todos los componentes del. Los componentes no interactúan directamente.</li>
+              <li><span style="color: #2b69a9">Cuándo</span> Grandes volúmenes de información o sistemas dirigidos por datos.</li>
+              <li><span style="color: #2b69a9">Ventajas</span> Los componentes no necesitan conocer la existencia de otros componentes. Los cambios se propagan hacia todos los componentes. Gestión consistente y centralizada de los datos.</li>
+              <li><span style="color: #2b69a9">Desventajas</span> Problemas en el repositorio afectan a todo el sistema. Posibles ineficiencias en la comunicación. Posibles dificultades al distribuir el repositorio.</li>
+            </ul>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Arquitectura de repositorio</h2>
+            <img src="img/diseno_repositorio.png" width="80%" height="80%">
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Arquitectura de cliente - servidor</h2>
+            <ul style="font-size: xx-large">
+              <li><span style="color: #2b69a9">Descripción</span> La funcionalidad del sistema se organiza en servicios, y cada servicio lo entrega un servidor independiente. Los clientes son usuarios de dichos servicios</li>
+              <li><span style="color: #2b69a9">Cuándo</span> Se usa cuando, desde varias ubicaciones, se tiene que ingresar a los datos en una base de datos compartida. También cuando la carga es variable (replicación de servidores).</li>
+              <li><span style="color: #2b69a9">Ventajas</span> Los servidores se pueden distribuir a través de una red. La funcionalidad general estaría disponible a todos los clientes, no necesita implementarse en todos los servicios.</li>
+              <li><span style="color: #2b69a9">Desventajas</span> Cada servicio son puntos de falla. El rendimiento depende de la red, así como del sistema. Posibles problemas administrativos cuando los servidores son propiedad de diferentes organizaciones.</li>
+            </ul>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Arquitectura de repositorio</h2>
+            <img src="img/diseno_cli_serv.png" width="80%" height="80%">
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Arquitectura de tubería</h2>
+            <ul style="font-size: xx-large">
+              <li><span style="color: #2b69a9">Descripción</span> Cada componente de procesamiento es discreto y realiza un tipo de transformación de datos. Los datos fluyen (como en una tubería) de un componente a otro para su procesamiento.</li>
+              <li><span style="color: #2b69a9">Cuándo</span> Se suele utilizar en aplicaciones de procesamiento de datos, donde las entradas se procesan en etapas separadas para generar salidas relacionadas</li>
+              <li><span style="color: #2b69a9">Ventajas</span> Fácil de entender y soporta reutilización. El estilo del flujo de trabajo coincide con la estructura de muchos procesos empresariales.</li>
+              <li><span style="color: #2b69a9">Desventajas</span> El formato debe acordarse y respetarse. Esto aumenta la carga del sistema, y puede significar que sea imposible reutilizar transformaciones funcionales que usen otros formatos.</li>
+            </ul>
+          </section>
+
+          <section>
+            <img data-src="img/logo_white.png" style="background: none; border: none; box-shadow: none; position: fixed; top: 0; right: 0; height: 100px;">
+            <h2>Arquitectura de tubería</h2>
+            <img src="img/diseno_tuberia.png" width="80%" height="80%">
+          </section>
+
+        </section>
+        <!--
+        TEMA 4: Diseño - Fin
+        -->
 
 			</div>
 		</div>
